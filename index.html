@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="menu">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#menu">Inicio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#info">De qué se trata</a>
+                  <a class="nav-link" href="#integrantes">¿Quienes somos?</a>
+                  <a class="nav-link" href="#galeria">Galería</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <div class="portada">
+    </div>
+    <h1 class="texto-portada">Voluntariado de reparación de PC</h1>
+    <div id="info">
+        <div class="dInfo">
+            <h2 class="Titulo">Información sobre el voluntariado</h2>
+            <p>El voluntariado de reparación de PC se encarga de recibir las computadoras rotas o en desuso de las instituciones de fomento de varios barrios bahienses para acondicionarlas y retornarlas o encontrarle un nuevo lugar de uso. La gran mayoría de los repuestos usados son partes de otras máquinas y aceptamos nuevos integrantes todos los años. Somos coordinados por el area de Extensión de la Universidad Nacional del Sur.</p>
+        </div>
+    </div>
+
+    <section>
+    <div id="integrantes">
+        <h2 class="Titulo"> Integrantes</h2>
+        <div class="miembros">
+          <div class="integranteGR">
+            <h3>Gabriel Rodríguez</h3>
+            <p>Estudiante avanzado de la UNS, empleado de sistemas de la Cooperativa Obrera, desarrolló varios cursos online de programación</p>
+            <button id="modal-abrir1" class="open-overlay">más...</button>
+          </div>
+          <div class="integranteMR">
+            <h3>Mariano Rosales</h3>
+            <p>Desarrolló varios cursos online de programación y reparación de PC</p>
+            <button id="modal-abrir2" class="open-overlay">más...</button>
+          </div>
+          <div class="integranteMS">
+            <h3>Marcos Senderovsky</h3>
+            <p>Estudiante avanzado de la UNS, desarrolló varios cursos online de programación</p>
+            <button id="modal-abrir3" class="open-overlay">más...</button>
+          </div>
+        </div>
+    </div>
+    </section>
+
+    <div id="modal-container1" class="modal-container1">
+      <div id="modal">
+        <h3>Gabriel Rodríguez</h3>
+        <p>Alumno de la UNS cursando el cuarto año de carrera, empleado de sistemas de la Cooperativa Obrera, desarrolló varios cursos online de programación</p>
+        <div>
+          <img src="images/photo_2021-11-01_20-27-34.jpg" alt="" id="fotosModal" width="300" height="250"> 
+          <img src="images/photo_2021-11-01_20-27-51.jpg" alt="" id="fotosModal" width="300" height="200">
+        </div>
+        <button id="modal-cerrar1" class="close-overlay">Cerrar</button>
+      </div>
+    </div>
+  
+    <div id="modal-container2" class="modal-container2">
+      <div id="modal">
+        <h3>Mariano Rosales</h3>
+        <p>Desarrolló varios cursos online de programación y reparación de PC</p>
+        <div>
+          <img src="images/photo_2021-11-01_20-27-44.jpg" alt="" id="fotosModal" width="300" height="200">
+          <img src="images/photo_2021-11-01_20-27-57.jpg" alt="" id="fotosModal" width="300" height="150">
+          <img src="images/photo_2021-11-01_20-27-51.jpg" alt="" id="fotosModal" width="300" height="200">
+        </div>
+        <button id="modal-cerrar2" class="close-overlay">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="modal-container3" class="modal-container3">
+      <div id="modal">
+        <h3>Marcos Senderovsky</h3>
+        <p>Alumno de la UNS cursando el tercer año de carrera, desarrolló varios cursos online de programación</p>
+        <div>
+          <img src="images/photo_2021-11-01_20-26-43.jpg" alt="" id="fotosModal" width="300" height="200">
+          <img src="images/photo_2021-11-01_20-27-57.jpg" alt="" id="fotosModal" width="300" height="150">
+        </div>
+        <button id="modal-cerrar3" class="close-overlay">Cerrar</button>
+      </div>
+    </div>
+
+    <div id="galeria">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/photo_2021-11-01_20-26-43.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo_2021-11-01_20-27-28.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo_2021-11-01_20-27-32.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo_2021-11-01_20-27-34.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo_2021-11-01_20-27-44.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo_2021-11-01_20-27-51.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/photo_2021-11-01_20-27-57.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+    <section>
+      <div id="Contacto">
+        <h2 class="Titulo">Contacto</h2>
+        <h3 class=" text-dark">Si deseas formar parte del equipo o tienes computadoras para donar / necesitas computadoras, deja tus datos aquí</h3>
+        <p id="textoForm">Complete los siguientes datos:</p>
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <p id="error"></p>
+            <label for="name" class=" text-dark">Nombre:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" onfocus="this.value=''">       
+            <br>
+            <label for="apellido" class=" text-dark">Apellido:</label>
+            <br>
+            <input type="text" id="apellido" name="apellido" onfocus="this.value=''">       
+            <br>
+            <label for="correo" class=" text-dark">Correo electrónico:</label>
+            <br>
+            <input type="email" id="correo" name="correo" onfocus="this.value=''">   
+            <br>
+            <label for="Título">Seleccione si desea ayudar, necesita equipos o desea donar:</label>
+            <select name="Título">
+                <option value="integrar" selected>Integrar el equipo</option>
+                <option value="necesito">Necesito nuevas computadoras</option>
+                <option value="donar">Tengo para donar</option>
+            </select>
+            <br>
+            <label for="Mensaje" class=" text-dark">Deje su mensaje aquí:</label>
+            <br>
+            <textarea id="Mensaje" name="mensaje" rows="4" cols="50"> 
+            </textarea>
+            <br>
+            <input type="button" class="btn" value="Enviar" onclick="validarForm()"/>
+        </form>
+      </div>
+    </section>
+
+    <section>
+    <div id="buscar">
+      <p>Ingrese número de identificación del integrante del que quiera ver sus datos</p>
+      <input type="number" id="numid" name="numero">
+      <input type="button" class="btn" id="boton" value="Ver" min="0" max="100"/>
+
+      <div id="datoAPI">
+
+      </div>
+    </div>
+    </section>
+
+    <!--Scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.js"></script>
+    <script src="formulario.js"></script>
+</body>
+</html>
